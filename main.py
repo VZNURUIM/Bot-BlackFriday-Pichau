@@ -4,7 +4,7 @@ escolha = int(input("Digite 1 para pix e 2 para boleto: \n[1] Pix\n[2] Boleto\nR
 
 while escolha == 1:
         try:
-            image_location = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\compra.png',
+            image_location = bot.locateOnScreen('compra.png',
                                                 confidence=0.7)
 
             if image_location is not None:
@@ -16,7 +16,7 @@ while escolha == 1:
             print('Imagem Não está na tela!')
 
         try:
-            image_location2 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\finalizar.png',
+            image_location2 = bot.locateOnScreen('finalizar.png',
                                                  confidence=0.7)
             if image_location2 is not None:
                 bot.click(image_location2)
@@ -27,7 +27,7 @@ while escolha == 1:
             print('Imagem Não está na tela!')
 
         try:
-            image_location3 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\continuar.png',
+            image_location3 = bot.locateOnScreen('continuar.png',
                                                  confidence=0.9)
             if image_location3 is not None:
                 bot.click(image_location3)
@@ -38,7 +38,7 @@ while escolha == 1:
             print('Imagem Não está na tela!')
 
         try:
-            image_location4 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\pix.png',
+            image_location4 = bot.locateOnScreen('pix.png',
                                                  confidence=0.9)
             if image_location4 is not None:
                 bot.click(image_location4)
@@ -49,7 +49,7 @@ while escolha == 1:
             print('Imagem Não está na tela!')
 
         try:
-            image_location5 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\Revisao.png',
+            image_location5 = bot.locateOnScreen('Revisao.png',
                                                  confidence=0.9)
             if image_location5 is not None:
                 bot.click(image_location5)
@@ -60,7 +60,7 @@ while escolha == 1:
             print('Imagem Não está na tela!')
 
         try:
-            image_location6 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\Check.png',
+            image_location6 = bot.locateOnScreen('Check.png',
                                                  confidence=0.9)
             if image_location6 is not None:
                 bot.click(image_location6)
@@ -71,7 +71,7 @@ while escolha == 1:
             print('Imagem Não está na tela!')
 
         try:
-            image_location7 = bot.locateOnScreen(r'C:\Users\vzvzv\pycharmProjects\Test\Project\agora.png',
+            image_location7 = bot.locateOnScreen('agora.png',
                                                  confidence=0.9)
             if image_location7 is not None:
                 bot.click(image_location7)
@@ -85,7 +85,8 @@ while escolha == 1:
 
 while escolha == 2:
     try:
-        image_location = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\compra.png', confidence=0.7)
+        image_location = bot.locateOnScreen('compra.png',
+                                            confidence=0.7)
 
         if image_location is not None:
             bot.click(image_location)
@@ -96,7 +97,8 @@ while escolha == 2:
         print('Imagem Não está na tela!')
 
     try:
-        image_location2 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\finalizar.png', confidence=0.7)
+        image_location2 = bot.locateOnScreen('finalizar.png',
+                                             confidence=0.7)
         if image_location2 is not None:
             bot.click(image_location2)
             print('Clicked in Finalizar.')
@@ -106,7 +108,8 @@ while escolha == 2:
         print('Imagem Não está na tela!')
 
     try:
-        image_location3 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\continuar.png', confidence=0.9)
+        image_location3 = bot.locateOnScreen('continuar.png',
+                                             confidence=0.9)
         if image_location3 is not None:
             bot.click(image_location3)
             print('Clicked in Continuar.')
@@ -116,7 +119,8 @@ while escolha == 2:
         print('Imagem Não está na tela!')
 
     try:
-        image_location4 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\Boleto.png', confidence=0.9)
+        image_location4 = bot.locateOnScreen('Boleto.png',
+                                             confidence=0.9)
         if image_location4 is not None:
             bot.click(image_location4)
             print('Clicked in Boleto.')
@@ -126,7 +130,8 @@ while escolha == 2:
         print('Imagem Não está na tela!')
 
     try:
-        image_location5 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\Revisao.png', confidence=0.9)
+        image_location5 = bot.locateOnScreen('Revisao.png',
+                                             confidence=0.9)
         if image_location5 is not None:
             bot.click(image_location5)
             print('Clicked in Revisao.')
@@ -136,7 +141,8 @@ while escolha == 2:
         print('Imagem Não está na tela!')
 
     try:
-        image_location6 = bot.locateOnScreen(r'C:\Users\vzvzv\PycharmProjects\Test\Project\Check.png', confidence=0.9)
+        image_location6 = bot.locateOnScreen('Check.png',
+                                             confidence=0.9)
         if image_location6 is not None:
             bot.click(image_location6)
             print('Clicked in Check')
@@ -146,7 +152,8 @@ while escolha == 2:
         print('Imagem Não está na tela!')
 
     try:
-        image_location7 = bot.locateOnScreen(r'C:\Users\vzvzv\pycharmProjects\Test\Project\agora.png', confidence=0.9)
+        image_location7 = bot.locateOnScreen('agora.png',
+                                             confidence=0.9)
         if image_location7 is not None:
             bot.click(image_location7)
             print("\n\n\n\n\nCreated By VzN!")
